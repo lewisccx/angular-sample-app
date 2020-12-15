@@ -32,4 +32,10 @@
     I'm nobody
 </p>
 </div>
+
+<h1>ng style</h1>
+<div [ngStyle]="{'background-color':'green', 'color':'white'}">This is a green div</div>
+<div [ngStyle]="{'background-color':backgoundColorProp, 'color':colorProp}">This is a dynamic div</div>
+<div [ngStyle]="{'background-color':validated ? 'gray' : 'yellow', 'color':validated ? 'black' : 'green'}">This is a conditional div</div>
+
 <router-outlet></router-outlet>

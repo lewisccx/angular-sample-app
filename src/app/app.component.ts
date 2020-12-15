@@ -37,4 +37,7 @@ export class AppComponent {
       '_id':'0005',
     },
   ]
+  validated = false
+  backgoundColorProp = "purple"
+  colorProp = "red"
 }
