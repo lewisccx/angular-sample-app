@@ -47,5 +47,7 @@ export class AppComponent {
   getNgClassName(){
     return 'ngClass3';
   }
-
+  imgSrc = "test.png"
+  imgAlt= "This is a missing image"
+  txtColor = "blue"
 }

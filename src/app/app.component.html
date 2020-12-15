@@ -47,5 +47,21 @@
 
 <div [ngClass]="getNgClassName()">This is ngClass example 6</div>
 
-
+<h1>Property Binding</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+       
+    </tr>
+    <tr *ngFor="let contact of contacts">
+        <td [title]="contact._id"> {{ contact._id}}</td>
+        <td [title]="contact.firstName">{{ contact.firstName}}</td>
+        <td [title]="contact.lastName">{{ contact.lastName}}</td>
+       
+    </tr>
+</table>
+<img [src]="imgSrc" [alt]= "imgAlt"/>
+<p [style.color]="txtColor"> This is property binded text</p>
 <router-outlet></router-outlet>
