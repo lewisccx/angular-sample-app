@@ -6,4 +6,21 @@
 <ng-template #error_msg><p class="text-danger">something went wrong</p></ng-template>
 <ng-template #updated_msg>user updated successfully</ng-template>
 
+<h1>Candidates</h1>
+<ul>
+    <li *ngFor="let contact of contacts; index as i; first as f; last as l;even as e; odd as o">
+       <div >
+         <p *ngIf="f" class="text-success">  {{i+1.}} {{contact.firstName}} {{contact.lastName}}</p>
+        </div>
+        <div >
+            <p *ngIf="l" class="text-secondary">  {{i+1.}} {{contact.firstName}} {{contact.lastName}}</p>
+
+        </div>
+           <div >
+            <p *ngIf="!l && !f" class="text-danger">  {{i+1.}} {{contact.firstName}} {{contact.lastName}}</p>
+
+           </div>
+    </li>
+   
+</ul>
 <router-outlet></router-outlet>
