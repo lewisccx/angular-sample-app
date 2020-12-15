@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'angular-sample-app';
   success_msg = false
 
+  superhero = "superman"
   contacts = [
     {
       'firstName':'lewis',

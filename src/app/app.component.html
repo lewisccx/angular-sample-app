@@ -14,13 +14,22 @@
         </div>
         <div >
             <p *ngIf="l" class="text-secondary">  {{i+1.}} {{contact.firstName}} {{contact.lastName}}</p>
-
         </div>
            <div >
             <p *ngIf="!l && !f" class="text-danger">  {{i+1.}} {{contact.firstName}} {{contact.lastName}}</p>
-
            </div>
     </li>
-   
 </ul>
+<h1>ng switch</h1>
+<div [ngSwitch]="superhero">
+<p *ngSwitchCase="'batman'">
+    I'm batman
+</p>
+<p *ngSwitchCase="'superman'">
+    I'm superman
+</p>
+<p *ngSwitchDefault>
+    I'm nobody
+</p>
+</div>
 <router-outlet></router-outlet>
