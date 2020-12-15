@@ -1,9 +1,9 @@
+<h1>{{title}}</h1>
+<div *ngIf="success_msg;then updated_msg; else error_msg"class="container-fluid">
+    user added successfully
+</div>
 
+<ng-template #error_msg><p class="text-danger">something went wrong</p></ng-template>
+<ng-template #updated_msg>user updated successfully</ng-template>
 
-<button mat-button>Basic</button>
-<button mat-button color="primary">Primary</button>
-<button mat-button color="accent">Accent</button>
-<button mat-button color="warn">Warn</button>
-<button mat-button disabled>Disabled</button>
-<a mat-button href="https://www.google.com/" target="_blank">Link</a>
 <router-outlet></router-outlet>
