@@ -40,4 +40,12 @@ export class AppComponent {
   validated = false
   backgoundColorProp = "purple"
   colorProp = "red"
+  dynamicClass= 'ngClass3'
+  conditionalClass4 = 'ngClass4'
+  conditionalClass5 = 'ngClass5'
+
+  getNgClassName(){
+    return 'ngClass3';
+  }
+
 }

@@ -38,4 +38,14 @@
 <div [ngStyle]="{'background-color':backgoundColorProp, 'color':colorProp}">This is a dynamic div</div>
 <div [ngStyle]="{'background-color':validated ? 'gray' : 'yellow', 'color':validated ? 'black' : 'green'}">This is a conditional div</div>
 
+<h1>ng class</h1>
+<div [ngClass]="'ngClass1'">This is ngClass example 1</div>
+<div [ngClass]="'ngClass1 ngClass2'">This is ngClass example 2</div>
+<div [ngClass]="dynamicClass">This is ngClass example 3</div>
+<div [ngClass]="validated ? conditionalClass4 : conditionalClass5">This is ngClass example 4</div>
+<div [ngClass]="{ngClass1: false, ngClass2: true, ngClass3: false}">This is ngClass example 5</div>
+
+<div [ngClass]="getNgClassName()">This is ngClass example 6</div>
+
+
 <router-outlet></router-outlet>
