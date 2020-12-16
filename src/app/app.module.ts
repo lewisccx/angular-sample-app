@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './auth/auth.module';
 import { ProfileModule } from './profile/profile.module';
 import { UsersComponent } from './users/users.component';
+//for ngModel
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AuthModule,
-    ProfileModule
+    ProfileModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

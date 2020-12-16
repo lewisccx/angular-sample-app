@@ -64,4 +64,7 @@
 </table>
 <img [src]="imgSrc" [alt]= "imgAlt"/>
 <p [style.color]="txtColor"> This is property binded text</p>
+<h1>2 way data-binding</h1>
+<input [(ngModel)]="username"/>
+<div> {{ username }}</div>
 <router-outlet></router-outlet>

@@ -50,4 +50,7 @@ export class AppComponent {
   imgSrc = "test.png"
   imgAlt= "This is a missing image"
   txtColor = "blue"
+  
+  username = "2 way databinding"
+
 }
