@@ -53,4 +53,10 @@ export class AppComponent {
   
   username = "2 way databinding"
 
-}
+  pipe_data1  = "PIPE_DATA"
+  pipe_data2 = "pipe_data"
+  pipe_data3  = Date.now()
+  pipe_data4  = { username:"lewiscao", major:"SE"}
+  pipe_data5 = 125
+  pipe_data6 = 0.33
+} 

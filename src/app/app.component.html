@@ -67,4 +67,22 @@
 <h1>2 way data-binding</h1>
 <input [(ngModel)]="username"/>
 <div> {{ username }}</div>
+<h1>built-in pipes</h1>
+<div> {{ pipe_data1 | lowercase }}</div>
+<div> {{ pipe_data2 | uppercase }}</div>
+<div> {{ pipe_data3 | date }}</div>
+<div> {{ pipe_data4 | json }}</div>
+<div> {{ pipe_data5 | currency }}</div>
+<div> {{ pipe_data6 | percent }}</div>
+<h1>Parameterised Pipes</h1>
+<div> {{ pipe_data5 | currency:'SGD' }}</div>
+<div> {{ pipe_data3 | date : 'short' }}</div>
+<div> {{ pipe_data3 | date : 'long' }}</div>
+<div> {{ pipe_data3 | date : 'full' }}</div>
+<div> {{ pipe_data3 | date : 'mm-dd-yy' }}</div>
+<div> {{ pipe_data3 | date : 'MMM-dd-yyyy' }}</div>
+<div> {{ pipe_data6 | percent: '2.3-4' }}</div>
+<h1>Chaining pipe</h1>
+<div> {{ pipe_data3 | date | uppercase }}</div>
+
 <router-outlet></router-outlet>
