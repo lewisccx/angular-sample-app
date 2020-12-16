@@ -11,7 +11,7 @@ import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { LoansComponent } from './loans/loans.component';
 import { HousingComponent } from './housing/housing.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     ProfileModule,
     FormsModule
   ],
-  providers: [{provide: LocationStrategy,useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy,useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
