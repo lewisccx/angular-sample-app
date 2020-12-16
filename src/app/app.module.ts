@@ -9,14 +9,18 @@ import { ProfileModule } from './profile/profile.module';
 import { UsersComponent } from './users/users.component';
 //for ngModel
 import { FormsModule } from '@angular/forms';
+import { LoansComponent } from './loans/loans.component';
+import { HousingComponent } from './housing/housing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
+    LoansComponent,
+    HousingComponent,
   ],
   imports: [
-BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AuthModule,
