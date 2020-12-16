@@ -9,17 +9,16 @@ const routes: Routes = [
   {
     path: 'loans',
     component: LoansComponent,
-    outlet: 'loans-outlet'
   },
   {
     path: 'users',
     component: UsersComponent,
-    outlet: 'users-outlet'
+   
   },
   {
-    path: 'user-housing',
+    path: 'loans/user-housing',
     component: HousingComponent,
-    outlet:'users-outlet'
+   
   },
 ];
 
