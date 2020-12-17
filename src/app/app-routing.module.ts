@@ -9,6 +9,8 @@ import { ListProfileComponent } from './profile/list-profile/list-profile.compon
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
 import { LeadsGridComponent } from './leads/leads-listing/leads-grid/leads-grid.component';
+import { SearchComponent } from './search/search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const routes: Routes = [
   {
     //only one component can be shown
@@ -47,6 +49,12 @@ const routes: Routes = [
   path:'leads',
   component:LeadsGridComponent,
 
+}, {
+  path: 'search',
+  component: SearchComponent
+}, {
+  path: '**',
+  component:PageNotFoundComponent
 }
 ];
 
