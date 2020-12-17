@@ -8,7 +8,7 @@ import { LoansComponent } from './loans/loans.component';
 import { ListProfileComponent } from './profile/list-profile/list-profile.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
-
+import { LeadsGridComponent } from './leads/leads-listing/leads-grid/leads-grid.component';
 const routes: Routes = [
   {
     //only one component can be shown
@@ -39,6 +39,15 @@ const routes: Routes = [
   path: 'clients',
   component: ClientsComponent
 },
+{
+  path:'',
+  redirectTo:'leads',
+  pathMatch:'full'
+},{
+  path:'leads',
+  component:LeadsGridComponent,
+
+}
 ];
 
 @NgModule({
