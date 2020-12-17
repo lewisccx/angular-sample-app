@@ -52,7 +52,11 @@ const routes: Routes = [
 }, {
   path: 'search',
   component: SearchComponent
-}, {
+},
+//lazy loading
+//ng g module payments --route payments --module app.module
+  { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) },
+  { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) }, {
   path: '**',
   component:PageNotFoundComponent
 }
