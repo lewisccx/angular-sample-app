@@ -13,6 +13,8 @@ import { LoansComponent } from './loans/loans.component';
 import { HousingComponent } from './housing/housing.component';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
+import { ProductsComponent } from './products/products.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
     UsersComponent,
     LoansComponent,
     HousingComponent,
+    ProductsComponent,
+    ClientsComponent,
   ],
   imports: [
     BrowserModule,

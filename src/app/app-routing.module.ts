@@ -6,6 +6,8 @@ import { UsersComponent } from './users/users.component';
 import { HousingComponent } from './housing/housing.component';
 import { LoansComponent } from './loans/loans.component';
 import { ListProfileComponent } from './profile/list-profile/list-profile.component';
+import { ProductsComponent } from './products/products.component';
+import { ClientsComponent } from './clients/clients.component';
 
 const routes: Routes = [
   {
@@ -24,7 +26,19 @@ const routes: Routes = [
 {
   path:'profile-list',
   component:ListProfileComponent
-}
+},
+{
+  path: 'products/:id',
+  component: ProductsComponent
+},
+{
+  path: 'products/:id/order/:oid',
+  component: ProductsComponent
+},
+{
+  path: 'clients',
+  component: ClientsComponent
+},
 ];
 
 @NgModule({
