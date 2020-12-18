@@ -11,6 +11,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { LeadsGridComponent } from './leads/leads-listing/leads-grid/leads-grid.component';
 import { SearchComponent } from './search/search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   {
     //only one component can be shown
@@ -39,7 +40,8 @@ const routes: Routes = [
 },
 {
   path: 'clients',
-  component: ClientsComponent
+  component: ClientsComponent,
+  canActivate:[AuthGuard]
 },
 {
   path:'',
